@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Interactive Task Management Web App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Project.css">
+</head>
+<style>
+    body {
+  background-image: url("Images/Picture\ \(3\).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>TASKIFY</h1>
+        <button id="themeToggle">🌙 Toggle Theme</button>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button id="addTask">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div class="button-group">
+            <button id="removeSelected">Remove Selected</button>
+            <button id="sortAsc">Sort A-Z</button>
+            <button id="sortDesc">Sort Z-A</button>
+            <button id="resetOrder">Reset Order</button>
+        </div>
+
+        <div class="counters">
+            <p>Total Tasks: <span id="totalCount">0</span></p>
+            <p>Completed Tasks: <span id="completedCount">0</span></p>
+            <p>Total Deleted Tasks: <span id="deletedCount">0</span></p>
+            <p>Total Edited Tasks: <span id="editedCount">0</span></p>
+        </div>
+    </div>
+    <script src="Project.js"></script>
+</body>
+</html>
