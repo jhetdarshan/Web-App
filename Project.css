@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif; 
+    font-weight: 1000; 
+    font-size: 50px;
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#themeToggle {
+    margin-bottom: 10px; 
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.button-group {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: nowrap; 
+}
+
+.button-group button {
+    white-space: nowrap; 
+    background-color: rgb(160, 160, 201);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px; 
+}
+
+.button-group button:hover {
+    background-color: darkblue;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eee;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: grab;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: lightgray;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.selected {
+    background: yellow;
+}
+
+.dark-mode {
+    background: #032030;
+    color: white;
+}
+
+.dark-mode li {
+    background: #444;
+}
+
+.dark-mode .selected {
+    background: yellow; 
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+}
+
+.check-btn {
+    color: green;
+}
+
+.delete-btn {
+    color: red;
+}
